@@ -38,8 +38,8 @@ edm_bands = [
     {'first_name': 'David', 'last_name':  'Guetta'}
 ]
 def iterateDictionary(some_list):
-    for pair in range(0, len(some_list)):
-        print(some_list[pair])
+    for x in some_list:
+        print(f"first_name - {x['first_name']}, last_name - {x['last_name']}")
 
 iterateDictionary(edm_bands)
 
@@ -69,7 +69,7 @@ concerts = {
 }
 def printInfo(some_dict):
     for key in some_dict:
-        print(key,len(some_dict[key]))
+        print(len(some_dict[key]), key)
         for values in some_dict[key]:
             print(values)
 
