@@ -68,7 +68,9 @@ concerts = {
     'Dates': ['October 1, 2021', 'October 4, 2021', 'October 7, 2021', 'October 14, 2021', 'October 17, 2021', 'October 20, 2021', 'October 23, 2021', 'October 27, 2021']
 }
 def printInfo(some_dict):
-    for pair in some_dict:
-        print(pair,len(some_dict[pair]))
+    for key in some_dict:
+        print(key,len(some_dict[key]))
+        for values in some_dict[key]:
+            print(values)
 
 printInfo(concerts)
